@@ -1,12 +1,23 @@
 import "./App.css";
+// import example of default, don't need {}
 import Greeting from "./components/Greeting";
-import Welcome from "./components/Welcome";
+// import example of named, uses {}, and using alias
+import MyComponent, {
+  FirstComponent as FC,
+  SecondComponent,
+} from "./components/MyComponent";
+// with default we don't need to use alias with as, just change the name
+// because only 1 default per file
+import MyDefaultWelcome from "./components/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <Welcome name="John" />
+      <MyDefaultWelcome name="John" />
       <Greeting name="Smith" />
+      <FC />
+      <SecondComponent />
+      <MyComponent />
     </div>
   );
 }
