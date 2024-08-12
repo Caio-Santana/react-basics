@@ -11,6 +11,7 @@ import MyComponent, {
 import MyDefaultWelcome from "./components/Welcome";
 import HelloWorld from "./components/HelloWorld";
 import Student from "./components/Student";
+import Employee from "./components/Employee";
 
 function App() {
   const student = {
@@ -37,6 +38,7 @@ function App() {
       {/* <Student student={student} skills={skills} /> */}
 
       <Student firstName="Joe" lastName="Smith" email="joe@mail.com" />
+      <Employee />
     </div>
   );
 }
