@@ -10,8 +10,17 @@ import MyComponent, {
 // because only 1 default per file
 import MyDefaultWelcome from "./components/Welcome";
 import HelloWorld from "./components/HelloWorld";
+import Student from "./components/Student";
 
 function App() {
+  const student = {
+    firstName: "Mary",
+    lastName: "Oak",
+    email: "mary@gmail.com",
+  };
+
+  const skills = ['HTML', 'CSS', 'JavaScript'];
+
   return (
     <div className="App">
       <MyDefaultWelcome name="John" />
@@ -20,6 +29,11 @@ function App() {
       <SecondComponent />
       <MyComponent />
       <HelloWorld />
+      {/* example 1 props */}
+      {/* <Student firstName="John" lastName="Doe" email="john@mail.com" />
+      <Student firstName="Joe" lastName="Smith" email="joe@mail.com" /> */}
+      {/* example 2 passing object */}
+      <Student student={student} skills={skills} />
     </div>
   );
 }
