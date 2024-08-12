@@ -13,6 +13,7 @@ import HelloWorld from "./components/HelloWorld";
 import Student from "./components/Student";
 import Employee from "./components/Employee";
 import User from "./components/User";
+import EventHandling from "./components/EventHandling";
 
 function App() {
   const student = {
@@ -41,6 +42,7 @@ function App() {
       {/* <Student firstName="Joe" lastName="Smith" email="joe@mail.com" />
       <Employee /> */}
       <User />
+      <EventHandling />
     </div>
   );
 }
