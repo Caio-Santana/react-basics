@@ -12,6 +12,7 @@ import MyDefaultWelcome from "./components/Welcome";
 import HelloWorld from "./components/HelloWorld";
 import Student from "./components/Student";
 import Employee from "./components/Employee";
+import User from "./components/User";
 
 function App() {
   const student = {
@@ -24,12 +25,12 @@ function App() {
 
   return (
     <div className="App">
-      <MyDefaultWelcome name="John" />
+      {/* <MyDefaultWelcome name="John" />
       <Greeting name="Smith" />
       <FC />
       <SecondComponent />
       <MyComponent />
-      <HelloWorld />
+      <HelloWorld /> */}
       {/* example 1 props */}
       {/* <Student firstName="John" lastName="Doe" email="john@mail.com" />
       <Student firstName="Joe" lastName="Smith" email="joe@mail.com" /> */}
@@ -37,8 +38,9 @@ function App() {
       {/* example 2 passing object & example 3 array */}
       {/* <Student student={student} skills={skills} /> */}
 
-      <Student firstName="Joe" lastName="Smith" email="joe@mail.com" />
-      <Employee />
+      {/* <Student firstName="Joe" lastName="Smith" email="joe@mail.com" />
+      <Employee /> */}
+      <User />
     </div>
   );
 }
