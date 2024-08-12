@@ -19,7 +19,7 @@ function App() {
     email: "mary@gmail.com",
   };
 
-  const skills = ['HTML', 'CSS', 'JavaScript'];
+  const skills = ["HTML", "CSS", "JavaScript"];
 
   return (
     <div className="App">
@@ -32,8 +32,11 @@ function App() {
       {/* example 1 props */}
       {/* <Student firstName="John" lastName="Doe" email="john@mail.com" />
       <Student firstName="Joe" lastName="Smith" email="joe@mail.com" /> */}
-      {/* example 2 passing object */}
-      <Student student={student} skills={skills} />
+
+      {/* example 2 passing object & example 3 array */}
+      {/* <Student student={student} skills={skills} /> */}
+
+      <Student firstName="Joe" lastName="Smith" email="joe@mail.com" />
     </div>
   );
 }
