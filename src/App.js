@@ -9,6 +9,7 @@ import MyComponent, {
 // with default we don't need to use alias with as, just change the name
 // because only 1 default per file
 import MyDefaultWelcome from "./components/Welcome";
+import HelloWorld from "./components/HelloWorld";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <FC />
       <SecondComponent />
       <MyComponent />
+      <HelloWorld />
     </div>
   );
 }
