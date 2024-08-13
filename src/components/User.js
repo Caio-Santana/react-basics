@@ -18,12 +18,19 @@ const User = () => {
     // setFirstName("Ram");
     // setLastName("Jadhav");
     // setEmail("ram@gmail.com");
+
+    // example 2 useState Hook with obj
+    setUser({
+      firstName: "Ram",
+      lastName: "Jadhav",
+      email: "ram@gmail.com",
+    });
   }
 
   return (
     <>
       <h1>User Details</h1>
-      
+
       {/* example 1 useState Hook */}
       {/* <p>{firstName}</p>
       <p>{lastName}</p>

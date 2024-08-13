@@ -14,6 +14,7 @@ import Student from "./components/Student";
 import Employee from "./components/Employee";
 import User from "./components/User";
 import EventHandling from "./components/EventHandling";
+import ConditionRendering from "./components/ConditionRendering";
 
 function App() {
   const student = {
@@ -43,6 +44,7 @@ function App() {
       <Employee /> */}
       <User />
       <EventHandling />
+      <ConditionRendering />
     </div>
   );
 }
